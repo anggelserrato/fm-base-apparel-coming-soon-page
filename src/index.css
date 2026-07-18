@@ -1,1 +1,108 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-display: swap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/josefin-sans-v34-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/josefin-sans-v34-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/josefin-sans-v34-latin-600.woff2') format('woff2');
+}
+
+@theme {
+  --color-white: hsl(0 100% 100%);
+  --color-black: hsl(0 0% 0%);
+  --color-gray-900: hsl(0 6% 24%);
+  --color-red-400: hsl(0 93% 68%);
+  --color-pink-400: hsl(0 36% 70%);
+  --color-gradient-start-1: hsl(0 80% 86%);
+  --color-gradient-end-1: hsl(0 74% 74%);
+  --color-gradient-start-2: hsl(0 0% 100%);
+  --color-gradient-end-2: hsl(0 100% 98%);
+  --color-gradient-start-3: hsl(0 100% 97%);
+  --color-gradient-end-3: hsl(0 100% 100%);
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --spacing-card-100: 0.5rem; /* 8px */
+  --spacing-card-200: 1rem; /* 16px */
+  --spacing-card-300: 1.5rem; /* 24px */
+  --spacing-card-400: 2rem; /* 32px */
+  --spacing-card-500: 2.5rem; /* 40px */
+  --spacing-card-800: 4rem; /* 64px */
+  --spacing-card-1000: 5rem; /* 80px */
+  --spacing-card-1100: 5.5rem; /* 88px */
+  --spacing-card-1700: 8.5rem; /* 136px */
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--color-primary);
+  }
+}
+
+@utility text-preset-light-1 {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 17.5px;
+}
+
+@utility text-preset-semibold-1 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: 17.5px;
+}
+
+@utility text-preset-light-2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+
+@utility text-preset-semibold-2 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+
+@utility text-preset-regular-3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.15;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-regular-4 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-regular-5 {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 2.15;
+  letter-spacing: 0px;
+}
