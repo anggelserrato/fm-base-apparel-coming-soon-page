@@ -27,6 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="1920" height="1440" alt="base apparel coming soon page shots" src="https://github.com/user-attachments/assets/2eee67ab-c5fc-4e4c-ba63-9f460ab97b19" />
+
 ### Links
 
 - Solution URL: [View Code](https://github.com/anggelserrato/fm-base-apparel-coming-soon-page)
