@@ -11,6 +11,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
+  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
 ## Overview
@@ -38,18 +39,29 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
-- [Vite](https://vitejs.dev/) - Build tool and dev server
+- [React](https://reactjs.org/) - Library for building the user interface
+- [Vite](https://vitejs.dev/) - Frontend tooling & development server
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling with modern CSS variables
+- Semantic HTML5 - For accessible and structured markup
+- Mobile-first workflow - Ensuring a great experience across all devices
+
+**Dev tooling:**
+
+- [Prettier](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Automatic code formatting and class sorting
 
 ### Useful resources
 
 - [Shots.so](https://shots.so/) - A fantastic tool for creating beautiful and professional screenshots of your websites.
 - [Squoosh.app](https://squoosh.app/) - An amazing image optimizer that helps you compress images without losing quality, making your site load faster.
+- [Google Webfonts Helper](https://gwfh.mranftl.com/fonts) - A tool for self-hosting Google Fonts, improving performance and privacy.
+
+### AI Collaboration
+
+I used [GitHub Copilot](https://github.com/features/copilot) as part of my Git workflow, guided by an `AGENTS.md` file in the project root. This file defines a consistent process for generating branch names, commit messages, and pull request descriptions following [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow) and [Conventional Commits](https://www.conventionalcommits.org/).
+
+- **Tool used:** GitHub Copilot
+- **How I used it:** Generating branch names, commit messages, and PR descriptions based on the actual code diff, following Conventional Commits and the PR template in `.github/pull-request-template.md`. All git/GitHub actions (branching, committing, pushing, opening the PR) were performed manually — the AI only produces the text.
+- **What worked well:** Kept commit history and PR descriptions consistent and readable without writing boilerplate each time, while staying in full control of what actually gets committed and pushed.
 
 ## Author
 
