@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img width="1920" height="1440" alt="base apparel coming soon page shots" src="https://github.com/user-attachments/assets/2eee67ab-c5fc-4e4c-ba63-9f460ab97b19" />
+<img width="1920" height="1440" alt="base apparel coming soon page shots" src="https://github.com/user-attachments/assets/e3cdd9f9-4a21-4a4b-9e78-3af0711690a0" />
 
 ### Links
 
