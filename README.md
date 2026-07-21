@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View Code](https://github.com/anggelserrato/fm-base-apparel-coming-soon-page)
-- Live Site URL: [Live Site](https://fm-base-apparel-coming-soon-page.vercel.app)
+- Live Site URL: [Live Site](https://fm-base-apparel-coming-soon-page-tawny.vercel.app/)
 
 ## My process
 
