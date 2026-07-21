@@ -33,27 +33,21 @@ function ComingSoonPage() {
   };
 
   return (
-    <main className="flex flex-col">
-      <header className="m-card-400 self-start md:ml-card-1000">
-        <img src={logo} alt="Base apparel logo" className="w-[101px]" />
-      </header>
-
-      <picture>
-        <source media="(min-width: 1024px)" srcSet={heroDesktop} />
-        <source media="(min-width: 768px)" srcSet={heroTablet} />
+    <main className="flex flex-col xl:grid xl:min-h-screen xl:grid-cols-2 xl:grid-rows-[auto_auto]">
+      <header className="order-1 m-card-400 self-start md:ml-card-1000 xl:order-0 xl:col-start-1 xl:row-start-1 xl:m-0 xl:mt-card-1000 xl:ml-[165px]">
         <img
-          src={heroMobile}
-          alt="Hero image for mobile devices"
-          className="mb-card-800 w-full"
+          src={logo}
+          alt="Base apparel logo"
+          className="w-[101px] xl:w-[158px]"
         />
-      </picture>
+      </header>
 
       <section
         aria-label="Coming soon announcement"
-        className="flex flex-col items-center gap-card-800"
+        className="order-3 mb-[92px] flex flex-col items-center md:mb-[62px] xl:order-0 xl:col-start-1 xl:row-start-2 xl:mb-0 xl:ml-[165px] xl:items-start"
       >
-        <div className="mx-8 max-w-[312px] text-center md:max-w-[445px]">
-          <h1 className="mb-card-200 text-preset-light-2 text-pink-400 md:mb-card-400 md:text-preset-light-1">
+        <div className="mx-8 max-w-[312px] text-center md:max-w-[445px] xl:mx-0 xl:text-left">
+          <h1 className="mb-card-200 text-preset-light-2 text-pink-400 md:mb-card-400 md:text-preset-light-1 xl:mb-0">
             We're{' '}
             <span className="text-preset-semibold-2 text-gray-900 md:text-preset-semibold-1">
               coming soon
@@ -84,14 +78,14 @@ function ComingSoonPage() {
               aria-required="true"
               aria-invalid={Boolean(error)}
               aria-describedby="email-error"
-              className={`mb-card-100 h-12 w-full rounded-[28px] border px-card-300 py-card-100 pr-[102px] text-pink-400/95 focus:outline-2 focus:outline-offset-2 focus:outline-pink-400 ${error ? 'border-red-400' : 'border-pink-400 '}`}
+              className={`mb-card-100 h-12 w-full rounded-[28px] border px-card-300 py-card-100 pr-[102px] text-pink-400/95 focus:outline-2 focus:outline-offset-2 focus:outline-pink-400 xl:h-14 ${error ? 'border-red-400' : 'border-pink-400 '}`}
             />
-            <div className="absolute top-0 right-0 flex h-12 items-center gap-card-100">
+            <div className="absolute top-0 right-0 flex h-12 items-center gap-card-100 xl:h-14">
               {error && <img src={iconError} alt="" className="h-6 w-6" />}
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="flex h-12 w-16 items-center justify-center rounded-[28px] bg-linear-135 from-gradient-start-1 to-gradient-end-1 shadow-[0_15px_20px_0_rgba(198,110,110,0.25)] focus:outline-2 focus:outline-offset-2 focus:outline-pink-400"
+                className="flex h-12 w-16 items-center justify-center rounded-[28px] bg-linear-135 from-gradient-start-1 to-gradient-end-1 shadow-[0_15px_20px_0_rgba(198,110,110,0.25)] focus:outline-2 focus:outline-offset-2 focus:outline-pink-400 xl:h-14 xl:w-25"
               >
                 <img src={iconArrow} alt="" className="h-5 w-3" />
               </button>
@@ -99,13 +93,23 @@ function ComingSoonPage() {
             <p
               role="alert"
               id="email-error"
-              className="pl-card-300 text-left text-preset-regular-5 text-red-400"
+              className="pl-card-300 text-left text-preset-regular-5 text-red-400 xl:min-h-[35px]"
             >
               {error}
             </p>
           </form>
         </div>
       </section>
+
+      <picture className="order-2 xl:order-0 xl:col-start-2 xl:row-span-2 xl:row-start-1 xl:min-h-0">
+        <source media="(min-width: 1280px)" srcSet={heroDesktop} />
+        <source media="(min-width: 768px)" srcSet={heroTablet} />
+        <img
+          src={heroMobile}
+          alt="Woman wearing an orange shirt"
+          className="mb-card-800 w-full xl:mb-0 xl:ml-auto xl:h-full xl:w-[610px] xl:object-cover"
+        />
+      </picture>
     </main>
   );
 }
